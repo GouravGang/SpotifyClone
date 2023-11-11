@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+body{
+    background-color: gray;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-bar {
+    background-color: black;
+    height: 52px;
+    display: flex;
+    font-family: 'Playfair Display', serif;
+    position: sticky;
+}
+
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    color: white;
+    align-items: center;
+}
+
+.nav-bar li{
+    margin: 0 10px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+}
+
+.brand img{
+    /* background-color: black; */
+    width: 44px; 
+    padding: 5px;
+}
+
+.spt{
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+    text-decoration: underline;
+}
+
+.container{
+    height: 70vh;
+    /* background-color: rgb(50, 48, 48); */
+    color: white;
+    font-family: 'Playfair Display', serif;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url("./bg.jpg ");
+    background-size: cover;
+}
+
+.bottom{
+    background-color: black;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    position: sticky;
+    bottom: 0px;
+}
+
+#myProgressBar{
+    width: 90vh;
+    cursor: pointer;
+}
+
+.btn{
+    margin-top: 10px;
+}
+
+.btn i{
+    cursor: pointer;
+}
+
+.fa-circle-play{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.song-item{
+   display: flex;
+   width: 35%;
+   background-color: white;
+   color: black;
+   border-radius: 34px;
+   justify-content: space-around;
+   align-items: center;
+   /* justify-content: center; */
+   margin: 13px 0px;
+   height: 38px;
+}
+
+.song-item img{
+   height: 33px;
+   /* border: 13px; */
+   border-radius: 21px;
+}
+
+.time-stamp i{
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+@media screen and (max-width: 670px)
+{
+    .bottom{
+        width: 100%;
+        margin-bottom: 0px;
+        position: sticky;
+    }
+
+    #myProgressBar{
+        width: 400px;
+       
+    }
+
+    .song-item{
+        width: 40%;
+    }
+
+    .container{
+        background-image: url("./bg.jpg ");
+        background-size: cover;
+        height: 70vh;
+        position: relative;
+    }
+
+}
+
+@media screen and (max-width: 790px)
+{
+    #myProgressBar{
+        width: 400px;
+    } 
+
+    .gif-info{
+        /* background-color: yellow; */
+        margin-left: -25px;
+    }
+}
+
+.gif-info{
+    height: auto;
+    width: auto;
+    position: absolute;
+    left: 28vw;
+    display: flex;
+}
+
+.gif-info img{
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+/* .time-stamp */
